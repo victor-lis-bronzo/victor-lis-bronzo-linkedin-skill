@@ -88,5 +88,5 @@ Gerenciamento integral de projetos fim a fim, comunicação direta com clientes,
 ## Links
 
 - **Portfolio:** https://victorlisbronzo.me/
-- **GitHub:** https://github.com/Victor-Lis
+- **GitHub:** https://github.com/victor-lis-bronzo
 - **LinkedIn:** https://www.linkedin.com/in/victor-lis-bronzo/

@@ -1,5 +1,5 @@
 ---
-name: victor-lis-bronzo/linkedin-skill
+name: victor-lis-bronzo-linkedin-skill
 description: >-
   Skill com o perfil profissional completo de Victor Lis Bronzo, desenvolvedor
   Full-Stack (TypeScript, React.js, Next.js, Node.js). Use esta skill quando
@@ -20,7 +20,7 @@ description: >-
 | **Localização** | Atibaia, SP, Brasil |
 | **Idiomas** | Português (nativo), Inglês (profissional) |
 | **Portfolio** | https://victorlisbronzo.me/ |
-| **GitHub** | https://github.com/Victor-Lis |
+| **GitHub** | https://github.com/victor-lis-bronzo |
 | **Indústria** | Software Development |
 
 ## Recursos Detalhados

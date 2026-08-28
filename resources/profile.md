@@ -12,7 +12,7 @@
 ## Links
 
 - **Portfólio:** [https://victorlisbronzo.me/](https://victorlisbronzo.me/)
-- **GitHub:** [https://github.com/Victor-Lis](https://github.com/Victor-Lis)
+- **GitHub:** [https://github.com/victor-lis-bronzo](https://github.com/victor-lis-bronzo)
 
 ## Idiomas
 
