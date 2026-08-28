@@ -1,0 +1,10 @@
+# LinkedIn raw export data (sensitive/personal)
+*.csv
+Articles/
+Jobs/
+Services Marketplace/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
