@@ -19,7 +19,6 @@ Desenvolvedor de Software Full Stack. Na StarSeg, atuo no ciclo de vida completo
 ## Freelance — Desenvolvedor Freelancer
 **Período:** Setembro de 2024 – Presente (atual)
 **Localização:** Remoto
-***REMOVED***
 
 Desenvolvedor Full-Stack atuando de forma autônoma (PJ), responsável pela entrega de soluções de software fim a fim.
 
