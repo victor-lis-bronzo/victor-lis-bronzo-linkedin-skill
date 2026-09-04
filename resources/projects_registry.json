@@ -138,7 +138,7 @@
     "suitable_roles": ["Backend Developer", "Data Engineer"]
   },
   {
-    "repo": "victor-lis-bronzo/n8n-social-preview-node",
+    "repo": "victor-lis-bronzo/n8n-nodes-social-preview",
     "name": "n8n Social Preview Node",
     "tier": 1,
     "domain": "tooling",
