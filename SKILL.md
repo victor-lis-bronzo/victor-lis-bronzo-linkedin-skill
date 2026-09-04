@@ -35,7 +35,7 @@ Para informações completas, consulte os arquivos em `resources/`:
 | [Competências e Endorsements](./resources/skills-and-endorsements.md) | 69 competências categorizadas + 17 endorsements |
 | [Certificações](./resources/certifications.md) | 91 certificações organizadas por emissor |
 | [Projetos](./resources/projects.md) | 23 projetos com descrições detalhadas |
-| [Registro de Projetos GitHub](./resources/projects_registry.json) | 33 repositórios GitHub auditados (stack, testes, arquitetura, tier) para seleção técnica de CVs sob medida |
+| [Registro de Projetos GitHub](./resources/projects_registry.json) | 30 repositórios GitHub auditados (stack, testes, arquitetura, tier) para seleção técnica de CVs sob medida |
 | [Recomendações](./resources/recommendations.md) | 4 recebidas + 4 dadas |
 | [Cursos LinkedIn Learning](./resources/learning.md) | 48 cursos organizados por tema |
 

@@ -32,7 +32,7 @@
   {
     "repo": "victor-lis-bronzo/portfolio",
     "name": "Portfolio (current)",
-    "tier": 1,
+    "tier": 2,
     "domain": "frontend",
     "tech_stack": ["Next.js", "React", "React Three Fiber", "Three.js", "Framer Motion", "Zustand", "Radix UI", "Vitest", "Biome", "TypeScript"],
     "tests": {"has_tests": true, "framework": "Vitest", "types": ["unit", "accessibility"]},
@@ -47,7 +47,7 @@
   {
     "repo": "victor-lis-bronzo/mercado-pago-api",
     "name": "Mercado Pago API",
-    "tier": 1,
+    "tier": 2,
     "domain": "backend",
     "tech_stack": ["Fastify", "TypeScript", "Zod", "Mercado Pago SDK", "Swagger/OpenAPI", "Ngrok"],
     "tests": {"has_tests": false, "framework": null, "types": []},
@@ -75,36 +75,6 @@
     "suitable_roles": ["Full Stack Developer", "Backend Developer", "Software Engineer"]
   },
   {
-    "repo": "victor-lis-bronzo/In.Orbit-Back-End",
-    "name": "In.Orbit — Back-End",
-    "tier": 1,
-    "domain": "backend",
-    "tech_stack": ["Fastify", "Drizzle ORM", "PostgreSQL", "Zod", "TypeScript"],
-    "tests": {"has_tests": false, "framework": null, "types": []},
-    "architecture": "Layered service (functions for business logic, http for routes), Fastify + Drizzle ORM",
-    "summary": "REST API for a personal goal-tracking app (weekly goals and completions), built during a RocketSeat NLW event with Fastify and Drizzle ORM.",
-    "highlights": [
-      "Clean separation between business-logic functions and HTTP routes",
-      "Pairs with In.Orbit-Web as a complete full-stack goal-tracking app"
-    ],
-    "suitable_roles": ["Backend Developer", "Software Engineer"]
-  },
-  {
-    "repo": "victor-lis-bronzo/In.Orbit-Web",
-    "name": "In.Orbit — Front-End",
-    "tier": 1,
-    "domain": "frontend",
-    "tech_stack": ["React", "Vite", "TanStack Query", "Radix UI", "React Hook Form", "Zod", "Tailwind CSS"],
-    "tests": {"has_tests": false, "framework": null, "types": []},
-    "architecture": "Component-based SPA (React + Vite) consuming a REST API via TanStack Query",
-    "summary": "React/Vite frontend for the In.Orbit goal-tracking app, consuming the In.Orbit-Back-End API via TanStack Query.",
-    "highlights": [
-      "Accessible component base via Radix UI",
-      "Pairs with In.Orbit-Back-End as a complete full-stack goal-tracking app"
-    ],
-    "suitable_roles": ["Frontend Developer", "Full Stack Developer"]
-  },
-  {
     "repo": "victor-lis-bronzo/Self-Checkout",
     "name": "Self-Checkout",
     "tier": 1,
@@ -122,14 +92,26 @@
   {
     "repo": "victor-lis-bronzo/EcoPlay-Web",
     "name": "Eco-Play (Web)",
-    "tier": 2,
+    "tier": 1,
     "domain": "fullstack",
     "tech_stack": ["Next.js", "Fastify", "Prisma", "MQTT", "Zod", "TanStack Query", "Tailwind CSS"],
     "tests": {"has_tests": false, "framework": null, "types": []},
     "architecture": "Two independent sub-projects (backend/, web/), each with its own manifest",
-    "summary": "Landing page and backend for Eco-Play, a gamified sustainability/recycling capstone (TCC) project.",
-    "highlights": ["Combines a Fastify backend with MQTT for IoT-style data ingestion"],
+    "summary": "Landing page and backend for Eco-Play, a gamified sustainability/recycling capstone (TCC) project, with a Fastify/MQTT backend that ingests telemetry from the project's ESP32 hardware.",
+    "highlights": ["Combines a Fastify backend with MQTT for IoT-style telemetry ingestion", "Pairs with EcoPlay-Arduino as a complete hardware-to-software pipeline"],
     "suitable_roles": ["Full Stack Developer", "Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/EcoPlay-Arduino",
+    "name": "Eco-Play (Arduino/ESP32 Firmware)",
+    "tier": 1,
+    "domain": "hardware",
+    "tech_stack": ["Arduino/ESP32 (C++)", "MD_MAX72xx", "MD_Parola", "SPI"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Single firmware sketch (.ino) driving an LED matrix display",
+    "summary": "Firmware for the robotics/hardware component of Eco-Play, driving an LED matrix display and feeding data to the EcoPlay-Web backend.",
+    "highlights": ["Physical/IoT counterpart to EcoPlay-Web, completing the project's hardware-to-software pipeline"],
+    "suitable_roles": ["Embedded/IoT Developer", "Full Stack Developer"]
   },
   {
     "repo": "victor-lis-bronzo/Dev-Controle",
@@ -142,30 +124,6 @@
     "summary": "Ticket-management system for developer workflows, built with Next.js, Prisma, and MongoDB Atlas.",
     "highlights": ["Uses Prisma with a document database (MongoDB) rather than the more common relational setup"],
     "suitable_roles": ["Full Stack Developer", "Backend Developer"]
-  },
-  {
-    "repo": "victor-lis-bronzo/radio-taxi",
-    "name": "Radio Taxi",
-    "tier": 2,
-    "domain": "backend",
-    "tech_stack": ["Java"],
-    "tests": {"has_tests": false, "framework": null, "types": []},
-    "architecture": "BCE/VCP layered architecture (Boundary/Controller/Entity)",
-    "summary": "Java domain model for a taxi-dispatch system, applying SOLID principles and the VCP (Boundary/Controller/Entity) pattern in an academic context.",
-    "highlights": ["Demonstrates layered OOP architecture without relying on any framework"],
-    "suitable_roles": ["Backend Developer", "Software Engineer"]
-  },
-  {
-    "repo": "victor-lis-bronzo/biblioteca-poo-solid",
-    "name": "Biblioteca POO SOLID",
-    "tier": 2,
-    "domain": "backend",
-    "tech_stack": ["Java"],
-    "tests": {"has_tests": false, "framework": null, "types": []},
-    "architecture": "Boundary/Controller/DAO/Entity layering, DAO pattern",
-    "summary": "Java library-management system applying SOLID principles, dependency injection, and the DAO pattern.",
-    "highlights": ["Clear DAO-based data-access layer separate from business logic"],
-    "suitable_roles": ["Backend Developer", "Software Engineer"]
   },
   {
     "repo": "victor-lis-bronzo/bd-ecommerce",
@@ -182,7 +140,7 @@
   {
     "repo": "victor-lis-bronzo/n8n-social-preview-node",
     "name": "n8n Social Preview Node",
-    "tier": 2,
+    "tier": 1,
     "domain": "tooling",
     "tech_stack": ["n8n", "Satori", "resvg-js", "TypeScript"],
     "tests": {"has_tests": false, "framework": null, "types": []},
