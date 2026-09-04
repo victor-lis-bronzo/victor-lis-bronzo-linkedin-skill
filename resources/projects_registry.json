@@ -1,0 +1,422 @@
+[
+  {
+    "repo": "victor-lis-bronzo/langclips",
+    "name": "LangClips",
+    "tier": 1,
+    "domain": "fullstack",
+    "tech_stack": ["NestJS", "Next.js", "TanStack", "BullMQ", "Redis", "Whisper AI", "IndexedDB", "Playwright", "Vitest", "Jest", "TypeScript"],
+    "tests": {"has_tests": true, "framework": "Jest (api) / Vitest (web, worker) / Playwright (e2e)", "types": ["unit", "e2e"]},
+    "architecture": "Monorepo (api/web/worker/infra) with an async job queue (BullMQ + Redis) and offline-first client storage (IndexedDB)",
+    "summary": "SaaS platform for media processing with asynchronous transcription via Whisper AI, built as a multi-service monorepo with CI running unit and e2e tests across all services.",
+    "highlights": [
+      "Only audited repo with a real CI matrix (lint, typecheck, test) across 3 services",
+      "Async job processing via BullMQ/Redis with an offline-first client (IndexedDB)"
+    ],
+    "suitable_roles": ["Backend Developer", "Full Stack Developer", "Software Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/gitassets",
+    "name": "Git Assets",
+    "tier": 1,
+    "domain": "fullstack",
+    "tech_stack": ["Next.js", "Fastify", "Prisma", "PostgreSQL", "NextAuth.js", "React Query", "Mercado Pago", "Docker", "Nginx", "Turborepo", "pnpm workspaces"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Monorepo (pnpm workspaces + Turborepo, 5 packages: web/api/core/database/packages), Docker Compose deploy behind Nginx",
+    "summary": "Micro-SaaS that lets developers buy and customize dynamic SVG cards for their GitHub profile README, with billing via Mercado Pago.",
+    "highlights": [
+      "Widest production-style stack in the portfolio: auth, billing, ORM, and CI/CD deploy in one monorepo",
+      "No automated tests configured yet"
+    ],
+    "suitable_roles": ["Backend Developer", "Full Stack Developer", "Software Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/portfolio",
+    "name": "Portfolio (current)",
+    "tier": 1,
+    "domain": "frontend",
+    "tech_stack": ["Next.js", "React", "React Three Fiber", "Three.js", "Framer Motion", "Zustand", "Radix UI", "Vitest", "Biome", "TypeScript"],
+    "tests": {"has_tests": true, "framework": "Vitest", "types": ["unit", "accessibility"]},
+    "architecture": "Clean Architecture layering (core/features/shared/app) inside a single Next.js App Router application",
+    "summary": "Personal portfolio with a 3D interactive scene (React Three Fiber) and a separate recruiter-focused, SEO/ATS-friendly view, tested with Vitest including accessibility checks.",
+    "highlights": [
+      "Clean Architecture separation between pure domain code and framework-specific features",
+      "Accessibility-focused unit tests, uncommon in the rest of the portfolio"
+    ],
+    "suitable_roles": ["Frontend Developer", "Full Stack Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/mercado-pago-api",
+    "name": "Mercado Pago API",
+    "tier": 1,
+    "domain": "backend",
+    "tech_stack": ["Fastify", "TypeScript", "Zod", "Mercado Pago SDK", "Swagger/OpenAPI", "Ngrok"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Layered Fastify service (routes/services/schemas/middlewares/errors) with OpenAPI docs",
+    "summary": "Fastify microservice for Mercado Pago payments, handling checkout, webhook processing, and cryptographic signature verification.",
+    "highlights": [
+      "Clear layered structure for a payments-domain microservice",
+      "Webhook signature verification and OpenAPI documentation built in"
+    ],
+    "suitable_roles": ["Backend Developer", "Software Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/CodeUp",
+    "name": "CodeUp",
+    "tier": 1,
+    "domain": "fullstack",
+    "tech_stack": ["Next.js", "Fastify", "PHP", "Prisma", "PostgreSQL", "Firebase Storage", "Docker Compose", "NextAuth.js", "TanStack Query"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Multi-service monorepo (Next.js frontend, Fastify API, PHP code-validator service) orchestrated via Docker Compose",
+    "summary": "Coding-practice platform where users submit Python solutions to challenges and get automatic validation against test cases, via a 3-service architecture (Next.js, Fastify, PHP).",
+    "highlights": [
+      "Cross-language architecture: a dedicated PHP service executes and validates submitted Python code",
+      "Full Docker Compose orchestration across frontend, API, validator, and database"
+    ],
+    "suitable_roles": ["Full Stack Developer", "Backend Developer", "Software Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/In.Orbit-Back-End",
+    "name": "In.Orbit — Back-End",
+    "tier": 1,
+    "domain": "backend",
+    "tech_stack": ["Fastify", "Drizzle ORM", "PostgreSQL", "Zod", "TypeScript"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Layered service (functions for business logic, http for routes), Fastify + Drizzle ORM",
+    "summary": "REST API for a personal goal-tracking app (weekly goals and completions), built during a RocketSeat NLW event with Fastify and Drizzle ORM.",
+    "highlights": [
+      "Clean separation between business-logic functions and HTTP routes",
+      "Pairs with In.Orbit-Web as a complete full-stack goal-tracking app"
+    ],
+    "suitable_roles": ["Backend Developer", "Software Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/In.Orbit-Web",
+    "name": "In.Orbit — Front-End",
+    "tier": 1,
+    "domain": "frontend",
+    "tech_stack": ["React", "Vite", "TanStack Query", "Radix UI", "React Hook Form", "Zod", "Tailwind CSS"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Component-based SPA (React + Vite) consuming a REST API via TanStack Query",
+    "summary": "React/Vite frontend for the In.Orbit goal-tracking app, consuming the In.Orbit-Back-End API via TanStack Query.",
+    "highlights": [
+      "Accessible component base via Radix UI",
+      "Pairs with In.Orbit-Back-End as a complete full-stack goal-tracking app"
+    ],
+    "suitable_roles": ["Frontend Developer", "Full Stack Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/Self-Checkout",
+    "name": "Self-Checkout",
+    "tier": 1,
+    "domain": "fullstack",
+    "tech_stack": ["Next.js", "React", "Prisma", "PostgreSQL", "Stripe", "Zod", "Radix UI", "TailwindCSS"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Next.js App Router application with Prisma ORM and Stripe payment integration",
+    "summary": "Self-checkout ordering system for a restaurant, built with Next.js, Prisma/PostgreSQL, and Stripe for payments.",
+    "highlights": [
+      "Full payment flow via Stripe integration",
+      "Modern App Router + Prisma stack with clear setup documentation"
+    ],
+    "suitable_roles": ["Full Stack Developer", "Frontend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/EcoPlay-Web",
+    "name": "Eco-Play (Web)",
+    "tier": 2,
+    "domain": "fullstack",
+    "tech_stack": ["Next.js", "Fastify", "Prisma", "MQTT", "Zod", "TanStack Query", "Tailwind CSS"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Two independent sub-projects (backend/, web/), each with its own manifest",
+    "summary": "Landing page and backend for Eco-Play, a gamified sustainability/recycling capstone (TCC) project.",
+    "highlights": ["Combines a Fastify backend with MQTT for IoT-style data ingestion"],
+    "suitable_roles": ["Full Stack Developer", "Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/Dev-Controle",
+    "name": "Dev Controle",
+    "tier": 2,
+    "domain": "fullstack",
+    "tech_stack": ["Next.js", "Prisma", "MongoDB Atlas", "NextAuth.js", "TypeScript"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Next.js App Router application with Prisma over MongoDB Atlas",
+    "summary": "Ticket-management system for developer workflows, built with Next.js, Prisma, and MongoDB Atlas.",
+    "highlights": ["Uses Prisma with a document database (MongoDB) rather than the more common relational setup"],
+    "suitable_roles": ["Full Stack Developer", "Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/radio-taxi",
+    "name": "Radio Taxi",
+    "tier": 2,
+    "domain": "backend",
+    "tech_stack": ["Java"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "BCE/VCP layered architecture (Boundary/Controller/Entity)",
+    "summary": "Java domain model for a taxi-dispatch system, applying SOLID principles and the VCP (Boundary/Controller/Entity) pattern in an academic context.",
+    "highlights": ["Demonstrates layered OOP architecture without relying on any framework"],
+    "suitable_roles": ["Backend Developer", "Software Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/biblioteca-poo-solid",
+    "name": "Biblioteca POO SOLID",
+    "tier": 2,
+    "domain": "backend",
+    "tech_stack": ["Java"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Boundary/Controller/DAO/Entity layering, DAO pattern",
+    "summary": "Java library-management system applying SOLID principles, dependency injection, and the DAO pattern.",
+    "highlights": ["Clear DAO-based data-access layer separate from business logic"],
+    "suitable_roles": ["Backend Developer", "Software Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/bd-ecommerce",
+    "name": "BD E-commerce (SQL Studies)",
+    "tier": 2,
+    "domain": "data",
+    "tech_stack": ["MySQL", "Docker"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Topic-organized SQL scripts (functions, procedures, triggers, transactions, views) over an e-commerce schema",
+    "summary": "Advanced SQL study repository covering MySQL functions, stored procedures, triggers, and transactions for an e-commerce schema.",
+    "highlights": ["Business logic implemented directly at the database engine level (stored procedures/triggers)"],
+    "suitable_roles": ["Backend Developer", "Data Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/n8n-social-preview-node",
+    "name": "n8n Social Preview Node",
+    "tier": 2,
+    "domain": "tooling",
+    "tech_stack": ["n8n", "Satori", "resvg-js", "TypeScript"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "n8n community node package",
+    "summary": "Published n8n community node that generates Git profile and social-preview images using Satori and resvg-js.",
+    "highlights": ["Published and publicly usable via npm as an n8n community node", "Has CI (build/publish workflows)"],
+    "suitable_roles": ["Backend Developer", "Tooling/DevX Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/cpu-analyser",
+    "name": "CPU Analyser",
+    "tier": 2,
+    "domain": "tooling",
+    "tech_stack": ["Electron", "React", "TypeScript", "Vite"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Electron app (main/preload/renderer processes)",
+    "summary": "Electron desktop app for monitoring CPU and RAM usage in real time.",
+    "highlights": ["Cross-platform desktop app packaged with electron-builder/electron-updater"],
+    "suitable_roles": ["Frontend Developer", "Desktop App Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/tailwind-cn-formatter",
+    "name": "Tailwind cn() Formatter",
+    "tier": 2,
+    "domain": "tooling",
+    "tech_stack": ["VS Code Extension API", "TypeScript", "esbuild"],
+    "tests": {"has_tests": true, "framework": "@vscode/test-cli + @vscode/test-electron (mocha)", "types": ["integration"]},
+    "architecture": "VS Code extension scaffold",
+    "summary": "VS Code extension scaffold for formatting Tailwind CSS cn() class strings.",
+    "highlights": ["Only extension in the portfolio with an integration-test harness configured"],
+    "suitable_roles": ["Tooling/DevX Engineer", "Frontend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/ngrok-nodesdk",
+    "name": "Ngrok Node SDK Example",
+    "tier": 2,
+    "domain": "tooling",
+    "tech_stack": ["Node.js", "TypeScript", "@ngrok/ngrok"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Single-file script",
+    "summary": "Minimal Node.js/TypeScript example using the official ngrok SDK to expose local servers.",
+    "highlights": ["Small, focused example of programmatic tunnel creation"],
+    "suitable_roles": ["Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/vps-config",
+    "name": "VPS Config",
+    "tier": 2,
+    "domain": "devops",
+    "tech_stack": ["Docker", "Docker Compose", "PostgreSQL", "MQTT/Mosquitto", "Portainer", "Evolution API", "Redis", "Nginx", "GitHub Actions"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Docker Compose stack of self-hosted services",
+    "summary": "Personal VPS setup: a Docker Compose stack for n8n, PostgreSQL, MQTT, Redis, Portainer, Evolution API, and Nginx.",
+    "highlights": ["Broad self-hosting/infra footprint across 7+ services", "Includes a CI workflow to restart the stack"],
+    "suitable_roles": ["DevOps Engineer", "Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/nginx-docker-boilerplate",
+    "name": "Nginx Docker Boilerplate",
+    "tier": 2,
+    "domain": "devops",
+    "tech_stack": ["Nginx", "Certbot", "Docker Compose"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Infra template (no application code)",
+    "summary": "Boilerplate for running Nginx with Certbot/Let's Encrypt in front of a Dockerized application.",
+    "highlights": ["Reusable TLS-termination template for Dockerized apps"],
+    "suitable_roles": ["DevOps Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/tag-release-template",
+    "name": "Tag Release Template",
+    "tier": 2,
+    "domain": "devops",
+    "tech_stack": ["GitHub Actions"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Reusable CI/CD workflow template",
+    "summary": "Reusable GitHub Actions template for tag-based SemVer releases, with pre-deploy backup, dry-run migrations, and post-deploy smoke tests.",
+    "highlights": ["Encodes a full release-safety checklist as automated CI/CD workflows"],
+    "suitable_roles": ["DevOps Engineer", "Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/fastify-vs-express-benchmark",
+    "name": "Fastify vs Express Benchmark",
+    "tier": 2,
+    "domain": "backend",
+    "tech_stack": ["TypeScript", "Fastify", "Express", "Axios"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Two standalone HTTP servers plus a benchmark script",
+    "summary": "Benchmark comparing raw request throughput between Fastify and Express.",
+    "highlights": ["Direct, reproducible performance comparison between two Node.js frameworks"],
+    "suitable_roles": ["Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/face-detector",
+    "name": "Face Detector",
+    "tier": 2,
+    "domain": "data",
+    "tech_stack": ["Python", "OpenCV"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Single-script CLI tool",
+    "summary": "Small OpenCV script for detecting and cropping faces in images.",
+    "highlights": ["Uses a Haar Cascade classifier for face detection"],
+    "suitable_roles": ["Data/ML Engineer", "Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/Puppeteer-Scraper",
+    "name": "Puppeteer Scraper",
+    "tier": 2,
+    "domain": "backend",
+    "tech_stack": ["Puppeteer", "MongoDB", "Node.js"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Single-service scraper with a MongoDB persistence layer",
+    "summary": "Web scraper using Puppeteer with MongoDB storage.",
+    "highlights": ["Headless-browser scraping with structured storage in MongoDB"],
+    "suitable_roles": ["Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/Browsers-Fingerprint",
+    "name": "Browsers Fingerprint",
+    "tier": 2,
+    "domain": "backend",
+    "tech_stack": ["Cloudflare Workers", "Cloudflare D1", "Wrangler"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Cloudflare Workers app with a D1 (SQL) database",
+    "summary": "Experiment with Cloudflare Workers and D1 for browser fingerprinting.",
+    "highlights": ["Edge-serverless architecture on Cloudflare's platform"],
+    "suitable_roles": ["Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/Dopamine-Redirection",
+    "name": "Dopamine Redirection",
+    "tier": 2,
+    "domain": "tooling",
+    "tech_stack": ["Chrome Extension Manifest V3", "JavaScript", "Chrome Storage API"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Chrome Extension (Manifest V3) with a background service worker",
+    "summary": "Chrome extension (Manifest V3) that redirects social media tabs to reduce dopamine-driven browsing.",
+    "highlights": ["Built entirely on the modern Manifest V3 extension APIs"],
+    "suitable_roles": ["Frontend Developer", "Tooling/DevX Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/CarePlus",
+    "name": "CarePlus",
+    "tier": 2,
+    "domain": "fullstack",
+    "tech_stack": ["Next.js", "React", "Supabase", "NextAuth.js", "Zustand", "TailwindCSS"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Next.js App Router application with Supabase-backed auth and data",
+    "summary": "E-commerce landing page for a hygiene-products company, built as a technical challenge with Next.js, Supabase, and NextAuth.",
+    "highlights": ["Full auth + cart + product flow built for a timed technical challenge"],
+    "suitable_roles": ["Frontend Developer", "Full Stack Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/Casa-da-Mae",
+    "name": "Casa da Mãe",
+    "tier": 2,
+    "domain": "fullstack",
+    "tech_stack": ["Next.js", "Supabase", "NextAuth.js", "React Hook Form", "Zod", "TailwindCSS"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Next.js App Router application with a members-only area and Supabase backend",
+    "summary": "Freelance institutional website with a member area and course pages, built with Next.js and Supabase for a real client.",
+    "highlights": ["Delivered as paid freelance work for an institution, not a personal exercise"],
+    "suitable_roles": ["Full Stack Developer", "Frontend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/older-portfolio",
+    "name": "Older Portfolio",
+    "tier": 2,
+    "domain": "frontend",
+    "tech_stack": ["Next.js", "React", "React Three Fiber", "Three.js", "Framer Motion", "TailwindCSS"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Single Next.js application",
+    "summary": "Earlier personal portfolio built with Next.js and React Three Fiber.",
+    "highlights": ["Predecessor to the current portfolio, useful to show technical progression"],
+    "suitable_roles": ["Frontend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/Regression-AI-Model",
+    "name": "Regression AI Model",
+    "tier": 2,
+    "domain": "data",
+    "tech_stack": ["Python", "scikit-learn", "pandas", "Node.js"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Hybrid pipeline: Node.js script generates training data, Python script trains and runs the model",
+    "summary": "Linear regression model in Python (scikit-learn) with a Node.js script for generating training data.",
+    "highlights": ["Combines a Node.js data-generation step with a Python ML training/inference step"],
+    "suitable_roles": ["Data/ML Engineer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/SOLID",
+    "name": "SOLID Principles Practice",
+    "tier": 2,
+    "domain": "fullstack",
+    "tech_stack": ["Next.js", "React", "Vite", "TypeScript"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Two independent sub-apps (Next.js and Vite/React) in one repository",
+    "summary": "Two small apps (Next.js and Vite/React) built to practice the SOLID principles.",
+    "highlights": ["Same design principles applied across two different frontend setups"],
+    "suitable_roles": ["Frontend Developer", "Full Stack Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/StudyPlus-with-NextJS",
+    "name": "StudyPlus (Next.js)",
+    "tier": 2,
+    "domain": "fullstack",
+    "tech_stack": ["Next.js", "Prisma", "NextAuth.js", "TailwindCSS"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Next.js application with Prisma ORM",
+    "summary": "Study/task tracker built with Next.js and Prisma (demo deployment's database is currently offline).",
+    "highlights": ["CSR/SSR mix for organizing study sessions and tasks"],
+    "suitable_roles": ["Full Stack Developer", "Frontend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/Climate-Control-Plus",
+    "name": "Climate Control Plus",
+    "tier": 2,
+    "domain": "fullstack",
+    "tech_stack": ["Next.js", "Prisma", "PostgreSQL", "OpenWeatherMap API", "Chart.js"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Next.js application with Prisma/PostgreSQL and an external weather API integration",
+    "summary": "Room-vs-outdoor temperature tracker using the OpenWeatherMap API, Next.js, and Prisma/PostgreSQL.",
+    "highlights": ["Combines a third-party API integration with chart-based data visualization"],
+    "suitable_roles": ["Full Stack Developer", "Frontend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/legal-eagle-rag-review",
+    "name": "Legal Eagle RAG Review (case study)",
+    "tier": 2,
+    "domain": "ai",
+    "tech_stack": ["GCP Cloud Run", "Vertex AI", "Firestore", "LangChain (referenced)"],
+    "tests": {"has_tests": false, "framework": null, "types": []},
+    "architecture": "Documentation only — no source code in this repository; implementation lives in a third-party repository referenced in REFERENCES.md",
+    "summary": "Case-study write-up of a production RAG assistant (GCP: Cloud Run, Vertex AI, Firestore) built during a professional workshop. This repository is documentation only; it does not contain original source code.",
+    "highlights": ["Demonstrates applied knowledge of RAG and prompt engineering on GCP", "Not a coded project — treat as a case study, not as evidence of this codebase belonging to the author"],
+    "suitable_roles": ["AI/ML Engineer", "Backend Developer"]
+  }
+]
