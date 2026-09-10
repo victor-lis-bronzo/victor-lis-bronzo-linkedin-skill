@@ -366,6 +366,23 @@
     "suitable_roles": ["Full Stack Developer", "Frontend Developer"]
   },
   {
+    "repo": "victor-lis-bronzo/prisma-true-rollback-cli",
+    "name": "Prisma True Rollback CLI",
+    "tier": 1,
+    "domain": "tooling",
+    "tech_stack": ["TypeScript", "Node.js", "Prisma", "PostgreSQL", "MySQL", "SQLite", "Vitest", "fast-check", "ESLint"],
+    "tests": {"has_tests": true, "framework": "Vitest (unit + integration) + fast-check (property-based)", "types": ["unit", "integration", "property-based"]},
+    "architecture": "Modular CLI (arg-parser, config-resolver, multi-engine drivers, orchestrator, reverse-sql generator, transactional executor, recovery coordinator, fs snapshot manager) with a fixed generate→snapshot→apply→delete pipeline and compensating recovery on failure",
+    "summary": "npx CLI that performs a true, destructive rollback of the most recently applied Prisma migration in development environments, since Prisma itself only supports roll-forward. Built end-to-end with Kiro (Amazon's spec-driven AI dev assistant), from requirements/design specs through a fully tested implementation. Published on npm as prisma-true-rollback-cli.",
+    "highlights": [
+      "Published and publicly usable via npm (npx prisma-true-rollback-cli), not just a local exercise",
+      "Only repo in the portfolio with property-based testing (fast-check, 19 correctness properties) layered on top of unit and integration tests",
+      "Full spec-driven workflow via Kiro (requirements.md/design.md/tasks.md under .kiro/specs) used to evaluate Amazon's kiro.dev tool",
+      "Atomic rollback with compensating recovery and multi-driver support (Postgres/MySQL/SQLite via optional dependencies) to avoid native-build failures on install"
+    ],
+    "suitable_roles": ["Backend Developer", "Tooling/DevX Engineer", "Software Engineer"]
+  },
+  {
     "repo": "victor-lis-bronzo/legal-eagle-rag-review",
     "name": "Legal Eagle RAG Review (case study)",
     "tier": 2,
