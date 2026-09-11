@@ -34,8 +34,8 @@ Para informações completas, consulte os arquivos em `resources/`:
 | [Formação Acadêmica](./resources/education.md) | IFSP (CST em ADS) e Etec (Técnico em DS) |
 | [Competências e Endorsements](./resources/skills-and-endorsements.md) | 69 competências categorizadas + 17 endorsements |
 | [Certificações](./resources/certifications.md) | 91 certificações organizadas por emissor |
-| [Projetos](./resources/projects.md) | 23 projetos com descrições detalhadas |
-| [Registro de Projetos GitHub](./resources/projects_registry.json) | 31 repositórios GitHub auditados (stack, testes, arquitetura, tier) para seleção técnica de CVs sob medida |
+| [Projetos](./resources/projects.md) | 24 projetos com descrições detalhadas |
+| [Registro de Projetos GitHub](./resources/projects_registry.json) | 32 repositórios GitHub auditados (stack, testes, arquitetura, tier) para seleção técnica de CVs sob medida |
 | [Recomendações](./resources/recommendations.md) | 4 recebidas + 4 dadas |
 | [Cursos LinkedIn Learning](./resources/learning.md) | 48 cursos organizados por tema |
 

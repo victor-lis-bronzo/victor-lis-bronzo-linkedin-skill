@@ -16,7 +16,7 @@ Este repositório é uma **skill** que expõe o perfil profissional completo de 
 │   ├── education.md            ← Formação acadêmica
 │   ├── skills-and-endorsements.md ← 69 competências + endorsements
 │   ├── certifications.md       ← 91 certificações
-│   ├── projects.md             ← 23 projetos em destaque
+│   ├── projects.md             ← 24 projetos em destaque
 │   ├── recommendations.md      ← Recomendações recebidas e dadas
 │   └── learning.md             ← Cursos do LinkedIn Learning
 ├── references/                 ← Progressive disclosure

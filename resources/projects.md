@@ -1,4 +1,10 @@
-# Projetos (23)
+# Projetos (24)
+
+## IoT StressBed 🔒
+
+- **Período:** Setembro de 2026
+- **Descrição:** Testbed de Iniciação Científica (IC) que compara empiricamente MQTT puro (sem TLS/auth) contra MQTT com TLS/mTLS (grupo de controle "secure"), sobre a mesma topologia e carga. Track A cobre confidencialidade/integridade (eavesdropping e injeção/spoofing de mensagens); Track B cobre disponibilidade (DoS por flooding de conexões, mensagens e payload malformado). Stack: NestJS, Next.js, dois brokers Mosquitto (plain/secure), InfluxDB + Grafana + Telegraf para observabilidade, PostgreSQL, scripts Python (Paho) para os ataques e firmware ESP32 como publisher legítimo, tudo orquestrado via Docker Compose.
+- **URL:** [Repositório no GitHub](https://github.com/victor-lis-bronzo/iot-stressbed)
 
 ## 🦅 Legal Eagle RAG (no GCP)
 - **Período:** Maio de 2026

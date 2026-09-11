@@ -393,5 +393,21 @@
     "summary": "Case-study write-up of a production RAG assistant (GCP: Cloud Run, Vertex AI, Firestore) built during a professional workshop. This repository is documentation only; it does not contain original source code.",
     "highlights": ["Demonstrates applied knowledge of RAG and prompt engineering on GCP", "Not a coded project — treat as a case study, not as evidence of this codebase belonging to the author"],
     "suitable_roles": ["AI/ML Engineer", "Backend Developer"]
+  },
+  {
+    "repo": "victor-lis-bronzo/iot-stressbed",
+    "name": "IoT StressBed",
+    "tier": 1,
+    "domain": "iot",
+    "tech_stack": ["NestJS", "Next.js", "Mosquitto (MQTT)", "TLS/mTLS", "InfluxDB", "Grafana", "Telegraf", "PostgreSQL", "Python (Paho MQTT)", "ESP32 (C++/Arduino)", "Docker Compose", "TypeScript"],
+    "tests": {"has_tests": true, "framework": "Jest (unit + integration) on the NestJS API / Jest + React Testing Library on the Next.js frontend", "types": ["unit", "integration"]},
+    "architecture": "Multi-service Docker Compose stack (NestJS API, Next.js dashboard, dual Mosquitto brokers — plain vs. TLS/mTLS-secured, Python attacker toolkit, ESP32 publisher firmware) with an observability path (Telegraf -> InfluxDB -> Grafana) kept deliberately independent from the app's own capture path, documented via ADRs",
+    "summary": "Scientific Initiation (Iniciação Científica) research testbed that empirically compares plain MQTT against TLS/mTLS-secured MQTT under identical topology and load. Track A covers confidentiality/integrity attacks (eavesdropping, message spoofing); Track B covers availability/DoS attacks (connection, message, and malformed-payload flooding), with every attack run unmodified against both the plain and secure broker as the scientific control.",
+    "highlights": [
+      "Actual scientific-control design: identical attacks run against a plain broker and a TLS/mTLS-secured broker to isolate the effect of the security layer",
+      "Real test coverage (Jest unit + integration on the API, Jest/RTL on the frontend) across a 6+ component architecture spanning TypeScript, Python, and embedded C++",
+      "Documented architecture decisions (ADRs) and experiment protocol/spec docs, unusual rigor for an academic research repo"
+    ],
+    "suitable_roles": ["Backend Developer", "Embedded/IoT Developer", "Data/ML Engineer", "Software Engineer"]
   }
 ]
