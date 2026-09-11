@@ -406,8 +406,9 @@
     "highlights": [
       "Actual scientific-control design: identical attacks run against a plain broker and a TLS/mTLS-secured broker to isolate the effect of the security layer",
       "Real test coverage (Jest unit + integration on the API, Jest/RTL on the frontend) across a 6+ component architecture spanning TypeScript, Python, and embedded C++",
-      "Documented architecture decisions (ADRs) and experiment protocol/spec docs, unusual rigor for an academic research repo"
+      "Documented architecture decisions (ADRs) and experiment protocol/spec docs, unusual rigor for an academic research repo",
+      "Independent observability stack (Telegraf -> InfluxDB -> Grafana) deliberately decoupled from the app's own capture path, closer to a production monitoring setup than a typical student project"
     ],
-    "suitable_roles": ["Backend Developer", "Embedded/IoT Developer", "Data/ML Engineer", "Software Engineer"]
+    "suitable_roles": ["Backend Developer", "Embedded/IoT Developer", "DevOps Engineer", "Security Engineer", "Data/ML Engineer", "Software Engineer"]
   }
 ]
