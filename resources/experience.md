@@ -1,13 +1,12 @@
 # StarSeg — Desenvolvedor Full-Stack (mar/2025 – atual)
 
 Contexto: empresa de tecnologia para gestão de condomínios e portarias.
-Mantém uma plataforma de 7 sistemas interligados: controle de acesso
+Mantém uma plataforma de 6 sistemas interligados: controle de acesso
 condominial (Star Condomine, hub central), lockers inteligentes para
 encomendas (Star Locker), botões de emergência IoT (Star Emergency),
-triagem de chamadas por voz com IA (Star Audio), rastreamento veicular
-(Star Tracking), gestão de clientes externos (Star Clients) e gestão
-administrativa interna (Star Fucando). Time de 2 desenvolvedores na
-manutenção contínua hoje.
+rastreamento veicular (Star Tracking), gestão de clientes externos
+(Star Clients) e gestão administrativa interna (Star Fucando). Time de
+2 desenvolvedores na manutenção contínua hoje.
 
 Nota de uso: este bloco é material bruto para seleção por vaga, não um
 currículo pronto. Os sistemas abaixo são repositórios privados da empresa
@@ -15,10 +14,10 @@ currículo pronto. Os sistemas abaixo são repositórios privados da empresa
 seção "Projetos" do template de CV (que exige link clicável). Entram como
 bullets desta experiência.
 
-## Star Condomine (sistema principal, mais de 1 ano de atuação)
+## Star Condomine (sistema principal, ~4 anos em produção)
 
 - Um dos maiores contribuidores individuais do sistema, entre uma equipe de
-  vários desenvolvedores ao longo de mais de um ano. Entrou em um projeto já
+  vários desenvolvedores ao longo de aproximadamente 4 anos. Entrou em um projeto já
   existente — não é autor do commit inicial.
 - Construiu, ponta a ponta, a integração com hardware de controle de acesso
   Control iD: schema de dados, controller HTTP, fila de comandos com
@@ -35,28 +34,21 @@ bullets desta experiência.
   privadas — não publicar métrica operacional da empresa em repositório
   público)*
 
-## Star Audio
-
-- Autor do commit inicial e maior contribuidor do sistema.
-- Serviço de triagem de visitantes por voz: recebe ligação SIP via central
-  Asterisk, conduz a triagem com a API Realtime da OpenAI (streaming de
-  áudio bidirecional, 50 frames por segundo), e transfere automaticamente
-  para atendente humano via protocolo AMI do Asterisk (implementado sem
-  biblioteca de terceiros) quando a triagem não se completa.
-- Evidência de execução real em produção (logs de chamada e gravações
-  geradas pelo próprio sistema).
-- Testes automatizados com pytest.
-
 ## Star Locker
 
 - Autor do commit inicial e maior contribuidor do sistema.
 - Sistema de armários inteligentes para recebimento de encomendas: firmware
-  em C para ESP32 (abertura de porta por motor de passo), comunicação MQTT
-  com o backend, controle de presença dos controladores via Redis (TTL de
-  15s), notificação ao morador por WhatsApp com link de abertura
-  autenticado.
-- Escreveu a camada de regra de negócio de entregas e a integração deste
-  sistema com o Star Condomine (consulta de moradores/portarias via API).
+  em C para ESP32 aciona os atuadores físicos da porta motorizada,
+  comunicação MQTT conecta os controladores ao backend, e Redis rastreia a
+  presença/conectividade dos controladores.
+- Construiu, em parceria com um colega, o protocolo de integração com o
+  Star Condomine (sistema principal de controle de acesso): autenticação
+  via API keys e compartilhamento do login dos moradores, permitindo ao
+  Star Locker consultar e cadastrar entregas diretamente contra o sistema
+  principal.
+- Ao chegar uma encomenda, o morador recebe uma notificação via WhatsApp
+  (usando a Evolution API, API não-oficial do WhatsApp) com um link
+  autenticado, aberto ao se aproximar do armário para liberar a retirada.
 
 ## Star Emergency
 
@@ -96,3 +88,9 @@ bullets desta experiência.
 ## Freelance — Desenvolvedor Freelancer
 **Período:** Setembro de 2024 – Presente (atual)
 **Localização:** Remoto
+
+- Manutenção e criação de sistemas para clientes, com atendimento direto
+  (levantamento de requisitos, entrega e suporte pós-entrega).
+- Stack principal: Next.js no front-end, Node.js no back-end, e o
+  ecossistema TypeScript de forma geral.
+- Projetos variados por cliente, sem um único produto ou domínio fixo.

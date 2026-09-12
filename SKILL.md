@@ -18,7 +18,7 @@ description: >-
 | **Título** | Desenvolvedor Full Stack |
 | **Stack Principal** | TypeScript · React.js · Next.js · Node.js |
 | **Localização** | Atibaia, SP, Brasil |
-| **Idiomas** | Português (nativo), Inglês (profissional) |
+| **Idiomas** | Português (nativo), Inglês (B1 - Intermediário) |
 | **Portfolio** | https://victorlisbronzo.me/ |
 | **GitHub** | https://github.com/victor-lis-bronzo |
 | **Indústria** | Software Development |

@@ -83,7 +83,7 @@ Gerenciamento integral de projetos fim a fim, comunicação direta com clientes,
 ## Idiomas
 
 - **Português:** Nativo
-- **Inglês:** Profissional (working proficiency)
+- **Inglês:** B1 - Intermediário (leio e escrevo bem, entendo e falo moderadamente)
 
 ## Links
 

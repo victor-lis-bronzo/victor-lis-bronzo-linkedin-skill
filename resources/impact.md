@@ -17,20 +17,19 @@ em produção, com todo o processo agora auditável.
 
 ## Escala
 
-Plataforma em produção há mais de um ano, atendendo dezenas de clientes
+Plataforma em produção há aproximadamente 4 anos, atendendo dezenas de clientes
 (condomínios) com milhares de usuários finais (moradores). Maior schema
 de dados entre os sistemas da empresa.
 
 ## Autoria — usar sempre por sistema, nunca agregada
 
-Um agregado único de "% de contribuição" entre os sete sistemas mistura
+Um agregado único de "% de contribuição" entre os seis sistemas mistura
 situações muito diferentes (de participação mínima a autoria integral) e
 não deve ser citado como número único em nenhum documento, público ou
 privado. Ver `notas-privadas-NAO-COMMITAR.md` para a tabela por sistema.
 
 Qualitativamente, para uso público:
-- Autor original e maior contribuidor: star-audio, star-locker,
-  star-emergency.
+- Autor original e maior contribuidor: star-locker, star-emergency.
 - Um dos maiores contribuidores, entrou em projeto já existente:
   star-condomine, star-tracking.
 - Envolvimento pontual/recente, não reivindicar como projeto próprio:

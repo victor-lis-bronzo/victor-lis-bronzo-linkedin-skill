@@ -19,7 +19,7 @@
 | Idioma | Proficiência |
 | :--- | :--- |
 | Português | Nativo |
-| Inglês | Profissional |
+| Inglês | B1 - Intermediário (leio e escrevo bem, entendo e falo moderadamente) |
 
 ## Sobre Mim
 
